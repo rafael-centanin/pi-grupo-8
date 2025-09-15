@@ -32,31 +32,33 @@
     </div>
 </header>
 
-
-    
+<section class="sect-login">
     <main class="login">
-        <div>
-        <form action="./login.html" method="get">
-            <label for="">Nombre de Usuario</label>
-            <input type="text" name="Nombre" id="" value="">
+        <form action="./index.html" method="get">
+            <div>
+                <label for="email">Ingrese su email</label> <br>
+                <input type="email" name="email" id="email" value="@gmail.com">
+            </div>
+
+            <div>
+                <label for="nombre">Ingrese su usuario</label> <br>
+                <input type="text" name="nombre" id="nombre">
+            </div>
+
+            <div>
+                <label for="contraseña">Ingrese su contraseña</label> <br>
+                <input type="password" name="contraseña" id="contraseña">
+            </div>
+
+            <div>
+                <button type="submit">Ingresar</button><br>
+                <a class="notengo" href="./register.html">No tengo cuenta</a>
+            </div>
         </form>
-        </div>
-
-        <div>
-            <form action="./login.html" method="get">
-                <label for="">Ingrese su contraseña</label>
-                <input type="text" name="Contraseña" id="" value="">
-            </form>
-        </div>
-
-        <div>
-            <form action="./login.html">
-                <label for="">Ingrese su email</label>
-                <input type="text" name="Email" id="" value="@gmail.com">
-            </form>
-        </div>
 
     </main>
+    </section>
+    
     
 </body>
 </html>

@@ -7,6 +7,71 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+     <header>
     
+    <div class="izq">
+        <a href="./index.html">
+            <img class="logo" src="./img/img-logo.jpg" alt="Logo">
+        </a>
+    </div>
+    <h1>TEFUC</h1>
+
+    <div class="center">
+        <form action="./search-results.html" method="get">
+            <input type="search" name="buscador" class="buscador" placeholder="Buscador">
+        </form>
+    </div>
+
+    <div class="derecha">
+        <nav class="usuario">
+            <a href="./login.html">Login</a>
+            <a href="./register.html">Registrarse</a>
+        </nav>
+    </div>
+</header>
+
+<section class="sect-register">
+<main class="register">
+    <h2>Registro</h2>
+    <form action="./login.html" method="get">
+        <div>
+            <label for="email">Ingrese su email</label required> <br>
+            <input type="email" name="email" id="email" value="@gmail.com">
+        </div>
+
+        <div>
+            <label for="nombre">Ingrese su nombre</label> <br>
+            <input type="text" name="nombre" id="nombre" required>
+        </div>
+
+        <div>
+            <label for="contraseña">Ingrese su contraseña</label> <br>
+            <input type="password" name="contraseña" id="contraseña" required>
+        </div>
+
+        <div>
+            <label for="confirmar-contraseña">Ingrese su contraseña nuevamente</label> <br>
+            <input type="password" name="contraseña" id="contraseña" required>
+        </div>
+
+        <div class="terminos">
+            <label for="terminos">Acepto terminos y condicienes</label><br>
+            <input type="checkbox" name="" id="" required>
+        </div>
+
+        <div>
+            <button type="submit">Registrarme</button>
+        </div>
+
+
+    </form>
+
+     <div>
+            <a class="si-tengo" href="./login.html">Ya tengo cuenta</a>
+        </div>
+
+</main>
+</section>
+
 </body>
 </html>
