@@ -19,7 +19,8 @@ header {
 }
 
 .buscador {
-    width: 100%;
+    width: 200%;
+    height: 200%;
 }
 
 
@@ -53,22 +54,29 @@ header {
     text-decoration: none;
     color: black;
 }
-.xcategory{
-    display: flex;
-    flex-direction: column;
-    background-color:  rgb(234, 250, 250);
-    height: 41.6%;
-    width: 15%;
-    border-radius: 5vw;
-}
-/*main del login*/
 
-.sect-login{
+
+.contenido {
     display: flex;
     justify-content: center;
-    align-self: center;
+    align-items: center;
     margin-top: 3%;
 }
+
+.aside-cat {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgb(234, 250, 250);
+    width: 15%;
+    border-radius: 5vw;
+    margin-right: 2%;
+    margin-top: 1%;
+}
+
+/*main del login*/
+
+
 .login{
     display: flex;
     flex-wrap: wrap;
@@ -78,17 +86,29 @@ header {
     border-radius: 12px;
     height: 40%;
     width: 30%;
+    margin-left: 17%;
 }
-.login{
-    display: flex;
-    align-self: center;
-}
+
 
 .notengo{
     list-style: none;
     text-decoration: none;
     color: black;
 }
+
+.contenido{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0.5%;
+}
+
+.login form{
+    margin-bottom: 9%;
+}
+.login div{
+    margin-bottom: 2%;
+}
+
 
 /*main del registro*/
 
@@ -114,3 +134,5 @@ header {
     text-decoration: none;
     color: black;
 }
+
+/*index*/
