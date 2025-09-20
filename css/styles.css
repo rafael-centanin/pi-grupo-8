@@ -5,7 +5,7 @@ header {
     align-items: center;
     justify-content: space-between;
     height: 100px;
-    border-radius: 5vw;
+    border-radius:2vw;
     padding: 2%;
 }
 body{
@@ -51,28 +51,25 @@ body{
     list-style: none;
     text-decoration: none;
     color: black;
-    font-size: 100%;
+    font-size: 20px;
+    padding-top: 1%;
 }
 .cate-all a{
     list-style: none;
     text-decoration: none;
     color: black;
+    padding-top: 2%;
+    font-family: "Quintessential", serif;
 }
 
-
-.contenido {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3%;
-}
 
 .aside-cat {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    background-color: rgb(234, 250, 250);
+    justify-content: flex-start;
+    background-color: #eff2ff;
     width: 15%;
+    height: 70%;
     border-radius: 5vw;
     margin-right: 2%;
     margin-top: 1%;
@@ -117,7 +114,7 @@ body{
 /*main del registro*/
 
 .register{
-     display: flex;
+    display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
@@ -136,6 +133,17 @@ body{
 
 /*index*/
 
+.main-index{
+    display: flex;
+    margin-top: 1%;
+}
+
+.productos-index{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
 .mas-vendidos, .otros-productos {
     display: flex;
     flex-wrap: wrap;
@@ -151,19 +159,19 @@ body{
     text-align: center;
     border: 1% solid black;
     border-radius: 5%;
-    padding: 2%;
+    padding: 1%;
     background-color: #d7d7d7;
     box-sizing: border-box;
 }
 
 .mas-vendidos img, .otros-productos img {
     width: 100%;
-    height: 70%;
+    height: 60%;
 }
 
 .mas-vendidos h2,.otros-productos h2 {
     width: 100%;
-    font-size: 300%;
+    font-size: 200%;
     font-family: "Quintessential", serif;
     color: rgb(85, 86, 86);
     margin-bottom: 2%;
@@ -173,4 +181,19 @@ body{
     list-style: none;
     text-decoration: none;
     color: black;
+    margin-top: 0.4%;
+    background-color: rgb(128, 128, 150);
+    color: white;
+    border-radius: 0.5vw;
+    font-weight: bold;
+}
+
+.mas-vendidos h3,.otros-productos h3{
+    font-size: 100%;
+}
+
+ .mas-vendidos p,.otros-productos p{
+    margin: 1%;
  }
+
+ 
