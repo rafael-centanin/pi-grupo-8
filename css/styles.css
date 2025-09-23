@@ -23,9 +23,9 @@ body{
 }
 
 .buscador {
-    width: 110%;
+    width: 120%;
     height: 120%;
-    border-radius: 1vw;
+    border-radius: 5vw;
 }
 
 
@@ -227,31 +227,46 @@ footer{
 
  /*main producto*/
 
- .product-main{
-    background-color: #091600;
-  
- }
+ .main-product {
+    display: flex;
+    margin-top: 1%;
+}
 
+.aside-cat {
+    width: 20%;
+    margin-right: 2%;
+}
+
+.product-main{
+    margin-left: 17%;
+    margin-top: 1.5%;
+}
  .product-main a{
     list-style: none;
     text-decoration: none;
-    color: rgb(0, 0, 0);
-    padding-top: 2%;
+    color: white;
+    padding-top: 1%;
     font-family: "Rubik Glitch", system-ui;
-    
+    background-color: rgb(128, 128, 150);
+    border-radius: 0.7vw;
  }
 .product-main article{
      width: 50%;
-    margin: 1%;
     text-align: center;
     border: 1% solid black;
     border-radius: 5%;
     padding: 1%;
-    background-color: #77d3fb;
-    box-sizing: border-box;
+    background-color: #d7d7d7;
+}
+
+.product-main div{
+    padding-top: 2%;
 }
 
 .product-main img{
-      width: 100%;
+    width: 100%;
     height: 60%;
 }
+ 
+/*search-result*/
+
