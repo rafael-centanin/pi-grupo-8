@@ -425,13 +425,19 @@ footer {
     width: 50%;
     margin-left: 25%;
     margin-top: 5%;
-
+}
 /*login aca ay un problema no se me pone el login en amarillo */
 
-.login{
-    width: 60%;
-    margin-left: 24%}
-
+ .login {
+    width: 80%;
+    margin-left: 10%
+}
+ .login input {
+        width: 90%;
+    }
+ .login button{
+    width: 94.5%;
+ }
 
 /*side buscador*/
 
@@ -453,5 +459,5 @@ footer {
  
 
 
-}
+
 
