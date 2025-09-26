@@ -468,7 +468,15 @@ footer {
    margin-bottom: 3%;
 }
 /*rating*/
-
+.name{
+    font-size: 70%;
+}
+.review h3 {
+    width: 245px;
+    padding-right: 45%;
+    padding-top: 6%;
+    margin: 0px;
+}
 /*registro*/
     
 .register {
