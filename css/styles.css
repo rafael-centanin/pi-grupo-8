@@ -113,7 +113,7 @@ footer {
 
     flex-direction: column;
 
-    justify-content: flex-end;
+    justify-content: center;
 
     background-color: #4c5168;
 
@@ -126,6 +126,8 @@ footer {
     margin-right: 2%;
 
     margin-top: 1%;
+
+    padding-left: 2%;
 
 }
 
@@ -441,7 +443,7 @@ footer {
 
 /*side buscador*/
 
-}
+
   .cate-all {
 
     list-style: none;
@@ -456,6 +458,7 @@ footer {
     padding-left: 0%;
    
     
+}
 }
  
 
