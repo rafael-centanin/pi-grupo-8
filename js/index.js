@@ -5,7 +5,7 @@ function art(element) {
        <h2>${element.title}</h2>
        <h3>${element.description}</h3>
        <p>${element.price}</p>
-       <p>  <a href="product.html?${element.id}"> ver detalle </a>
+       <p>  <a href="product.html?pjId=${element.id}"> ver detalle </a>
      </article>
     `;
     return txt;
@@ -16,7 +16,7 @@ const otrosProductos = document.querySelector('.otros-productos')
 const categoryAll = document.querySelector('.cate-all')
 
 
-fetch('https://dummyjson.com/products')
+fetch('https://dummyjson.com/products/category/sports-accessories')
 .then(function(response) {
   return response.json()
 })
@@ -30,7 +30,7 @@ fetch('https://dummyjson.com/products')
     masVendidos.innerHTML += art(produ[i]);
     
   }
-  for (let i = 10; i<produ.length; i++){
+  for (let i = 10; i<20; i++){
     
     otrosProductos.innerHTML += art(produ[i]);
   }
