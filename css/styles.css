@@ -230,7 +230,7 @@ footer {
     width: 20%;
     margin: 1%;
     text-align: center;
-    border: 1% solid black;
+    border: thin solid black;
     border-radius: 5%;
     padding: 1%;
     background-color: #d7d7d7;
@@ -308,7 +308,7 @@ footer {
 .product-main article {
     width: 50%;
     text-align: center;
-    border: 1% solid black;
+    border: thin solid black;
     border-radius: 5%;
     padding: 1%;
     background-color: #b3b3c0;
@@ -449,7 +449,7 @@ footer {
     width: 75%;
     margin: 3%;
     text-align: center;
-    border: 1% solid black;
+    border: thin solid black; 
     border-radius: 5%;
     padding: 1%;
     background-color: #d7d7d7;
