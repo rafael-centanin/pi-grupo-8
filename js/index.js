@@ -3,8 +3,9 @@ function art(element) {
     <article>
        <img src="${element.images}" alt="${element.title}">
        <h2>${element.title}</h2>
-       <p>${element.description}</p>
+       <h3>${element.description}</h3>
        <p>${element.price}</p>
+       <p>  <a href="product.html?${element.id}"> ver detalle </a>
      </article>
     `;
     return txt;

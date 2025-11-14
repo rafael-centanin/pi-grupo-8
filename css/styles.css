@@ -239,14 +239,14 @@ footer {
 
 .mas-vendidos img,
 .otros-productos img {
-    width: 100%;
-    height: 60%;
+    width: 80%;
+    height: 50%;
 }
 
 .mas-vendidos h2,
 .otros-productos h2 {
     width: 100%;
-    font-size: 200%;
+    font-size: 70%;
     font-family: "Quintessential", serif;
     color: rgb(105, 164, 164);
     margin-bottom: 2%;
@@ -270,7 +270,7 @@ footer {
 
 .mas-vendidos h3,
 .otros-productos h3 {
-    font-size: 100%;
+    font-size: 70%;
 }
 
 .mas-vendidos p,
