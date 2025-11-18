@@ -1,16 +1,17 @@
-let emailG = localStorage.getItem("email")
+let data = localStorage.getItem("data")
+let dataObj = JSON.parse(data)
 
 
-let login = document.querySelector(".login")
-let register = document.querySelector(".register")
+let saludo = document.querySelector(".saludar")
 let logout = document.querySelector(".logout")
+let links = document.querySelector(".derecha")
 
 
-if (emailG) {
-    
+if (dataObj) {
+    saludo.innerHTML = `Bienvenido: ${dataObj.email}`
+    logout.innerHTML = `<a href="./login.html">logout</a>`
 
- 
-}else{
-  alert("")
+    links.innerHTML = `<li></li>
+                       <li></li>`
 }
 

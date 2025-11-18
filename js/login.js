@@ -1,19 +1,30 @@
-let form = document.querySelector(".loginForm")
+let formulario = document.querySelector(".loginForm")
 
-form.addEventListener("submit", function(e){
+
+
+formulario.addEventListener("submit", function(e){
     e.preventDefault();
 
+    let email = this.email.value
+    let password = this.email.value
 
-    let email = this.email.value;
-    let password = this.password.value;
 
-    if (email == "") {
-        alert("El email no puede quedar vacio!")
-    }else if (password == "") {
-        alert("Introduzca su contraseña")
-    }else {
-        localStorage.setItem("email", email);
-        location.href = "index.html"
+    if (email.value == "") {
+        alert("Ingrese su email")
+    }else if (password.value == "") {
+       alert("ingrese su password")
+    }else if (password.value.length < 6) {
+        alert("La contrasena debe tener al menos 6 caracteres")
+    }
+     else {
+        let usuario ={
+            mail: email.value,
+            contraseña: password.values
+        }
+        let usuString =JSON.stringify(usuario)
+        localStorageStorage.setItem("data", usuString);
+        this.submit()
+
     }
 
 })
