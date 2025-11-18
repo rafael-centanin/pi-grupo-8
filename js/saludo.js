@@ -9,8 +9,8 @@ let logout = document.querySelector(".logout")
 if (emailG) {
     
 
-
+ 
 }else{
-    alert("")
+  alert("")
 }
 
