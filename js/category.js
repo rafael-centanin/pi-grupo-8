@@ -54,3 +54,4 @@ const categoryAll = document.querySelector('.cate-all')
 .catch(function(error) {
   console.log("Error: " + error);
 })
+

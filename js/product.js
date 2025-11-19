@@ -25,6 +25,29 @@ fetch('https://dummyjson.com/products?limit=194')
                 <p>${lista[i].tags}</p>
             </article>
             `;
+
+            texto.innerHTML += `
+            <section class= "reviews">
+            <h3>Opiniones del publico</h3>
+            </section>
+            `;
+            
+            let opiniones = document.querySelector(".reviews")
+            let usuREv = lista[i].reviews;
+
+
+            for (let i = 0; i < usuREv.length; i++) {
+                opiniones.innerHTML += `
+                <div class= "reviewDeUsuario">
+                <p>⭐ Rating: ${usuREv[i].rating}</p>
+                <p>Comentario: ${usuREv[i].comment}</p>
+                <p>Fecha: ${usuREv[i].date}</p>
+                <p>Usuario: ${usuREv[i].reviewerName}</p>
+                </div>
+                `;
+            }
+
+
         }
     }
 })
@@ -33,4 +56,32 @@ fetch('https://dummyjson.com/products?limit=194')
 });
 
 
+//barra aside category
+const categoryAll = document.querySelector('.cate-all');
+function cat(element) {
+  let txt = `
+    <article>
+       <p> <a href="category.html?pjId=${element.slug}"> ${element.name} </a>
+     </article>
+    `;
+    return txt;
+}
+ 
 
+
+fetch('https://dummyjson.com/products/categories')
+.then(function(response) {
+  return response.json()
+})
+.then(function(data) {
+  console.log(data);
+
+  for (let i = 0; i<data.length; i++) {
+    categoryAll.innerHTML += cat(data[i]);
+    
+  }
+
+})
+.catch(function(error) {
+  console.log("Error: " + error);
+})

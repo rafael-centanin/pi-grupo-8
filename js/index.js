@@ -36,7 +36,7 @@ fetch('https://dummyjson.com/products/category/sports-accessories')
   console.log("Error: " + error);
 })
 
-fetch('https://dummyjson.com/products/category/motorcycle')
+fetch("https://dummyjson.com/products")
 .then(function(response) {
   return response.json()
 })
@@ -56,6 +56,7 @@ fetch('https://dummyjson.com/products/category/motorcycle')
   console.log("Error: " + error);
 })
 
+//barra aside category
 function cat(element) {
   let txt = `
     <article>
