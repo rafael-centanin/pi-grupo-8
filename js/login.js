@@ -5,8 +5,8 @@ let formulario = document.querySelector(".loginForm")
 formulario.addEventListener("submit", function(e){
     e.preventDefault();
 
-    let email = this.email.value
-    let password = this.email.value
+    let email = this.email.value;
+    let password = this.email.value;
 
 
     if (email.value == "") {
@@ -18,8 +18,8 @@ formulario.addEventListener("submit", function(e){
     }
      else {
         let usuario ={
-            mail: email.value,
-            contraseña: password.values
+            mail: email,
+            contraseña: password
         }
         let usuString =JSON.stringify(usuario)
         localStorageStorage.setItem("data", usuString);

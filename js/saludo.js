@@ -10,7 +10,6 @@ let links = document.querySelector(".derecha")
 if (dataObj) {
     saludo.innerHTML = `Bienvenido: ${dataObj.email}`
     logout.innerHTML = `<a href="./login.html">logout</a>`
-
     links.innerHTML = `<li></li>
                        <li></li>`
 }
