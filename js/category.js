@@ -37,6 +37,18 @@ for (let i = 0; i<lista.length; i++) {
 })
 
 
+//barra aside category
+const categoryAll = document.querySelector('.cate-all');
+function cat(element) {
+  let txt = `
+    <article>
+       <p> <a href="category.html?pjId=${element.slug}"> ${element.name} </a>
+     </article>
+    `;
+    return txt;
+}
+ 
+
 
 fetch('https://dummyjson.com/products/categories')
 .then(function(response) {
@@ -44,7 +56,7 @@ fetch('https://dummyjson.com/products/categories')
 })
 .then(function(data) {
   console.log(data);
-const categoryAll = document.querySelector('.cate-all')
+
   for (let i = 0; i<data.length; i++) {
     categoryAll.innerHTML += cat(data[i]);
     
