@@ -3,14 +3,15 @@ let dataObj = JSON.parse(data)
 
 
 let saludo = document.querySelector(".saludar");
-let login = document.querySelector(".loginVista");
-let register = document.querySelector(".registerVista")
+let usuarNav = document.querySelector(".usuario")
 
 
 if (dataObj) {
     saludo.innerHTML = `Bienvenido: ${dataObj.mail}`
-    logout.innerHTML = `<a href="./login.html">logout</a>`
-
+    usuarNav.innerHTML = `
+    <a href="./index.html">Home</a>
+    <a href="./login.html" class="logout">logout</a>
+    `
 
 }
 
