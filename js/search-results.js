@@ -1,8 +1,10 @@
-
-    
- let queryString = location.search;
+     let queryString = location.search;
  let qsobj = new URLSearchParams(queryString);
- let busc = qsobj.get('buscador'); 
+ let busc = qsobj.get('buscador');
+
+ let texto = document.querySelector(".mas-vendidos")
+
+
 
 
 
@@ -11,15 +13,15 @@ fetch('https://dummyjson.com/products/search?q='+busc)
   return response.json()
 })
 .then(function(data) {
+  console.log(data);
+  
    let lista = data.products;
- 
-let texto = document.querySelector(".mas-vendidos");
-    texto.innerHTML = ''
- if (lista.length > 0 )
+
+   if (lista.length > 0){
     for (let i = 0; i < lista.length; i++) 
        {
           texto.innerHTML +=   `
-            <article>
+            <article class="brian-search">
                 <img src="${lista[i].thumbnail}" alt="${lista[i].title}">
                 <h2>${lista[i].title}</h2>
                 <h3>${lista[i].description}</h3>
@@ -31,12 +33,25 @@ let texto = document.querySelector(".mas-vendidos");
             </article>
             `;
         }
-    else 
+      }else {
         texto.innerHTML = "<h1>No hay resultados para el término:"+busc+"</h1>"
 
+      }
+  
 
+
+  
+}).catch(function(error) {
+  console.log(error);
+  
 })
+
+
+
+
     //barra aside category
+
+  
 const categoryAll = document.querySelector('.cate-all');
 function cat(element) {
   let txt = `

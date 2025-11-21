@@ -1,5 +1,5 @@
 let formulario = document.querySelector(".loginForm");
-
+let error = document.querySelector(".mensajeError")
 
 
 formulario.addEventListener("submit", function(e){
@@ -10,11 +10,11 @@ formulario.addEventListener("submit", function(e){
 
 
     if (email == "") {
-        alert("Ingrese su email")
+        error.innerHTML = "Complete el campo email"
     }else if (password == "") {
-       alert("ingrese su password")
+       error.innerHTML = "Complete el campo password"
     }else if (password.length < 6) {
-        alert("La contrasena debe tener al menos 6 caracteres")
+        error.innerHTML = "La contrasena debe tener al menos 6 caracteres"
     }
      else {
         let usuario ={

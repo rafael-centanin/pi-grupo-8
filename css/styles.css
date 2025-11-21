@@ -235,7 +235,7 @@ footer {
     padding: 1%;
     background-color: #d7d7d7;
     box-sizing: border-box;
-    overflow-x: auto;
+    
 }
 
 .mas-vendidos img,
@@ -398,6 +398,18 @@ footer {
     padding-right: 70%;
 
 }
+
+
+/*Ultimos cambios*/
+.brian-search {
+    font-size: small;
+    
+}
+
+
+.mensajeError{
+    color: red;
+}
 /*responsive phone*/
 
 @media (max-width: 420px) {
@@ -435,6 +447,7 @@ footer {
 
     
 /*productos*/   
+
     
    .mas-vendidos article,
     .otros-productos article {
@@ -555,7 +568,9 @@ footer {
     width: 98%;
   }
    
-    
+    .brian-search p{
+    font-size: 80%;
+}
 }
 
 
