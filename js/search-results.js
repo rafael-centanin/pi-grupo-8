@@ -27,6 +27,7 @@ let texto = document.querySelector(".mas-vendidos");
                 <p>${lista[i].category}</p>
                 <p>${lista[i].stock}</p>
                 <p>${lista[i].tags}</p>
+                <p>  <a href="product.html?pjId=${lista[i].id}"> ver detalle </a>
             </article>
             `;
         }

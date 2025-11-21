@@ -19,10 +19,11 @@ fetch('https://dummyjson.com/products?limit=194')
                 <img src="${lista[i].thumbnail}" alt="${lista[i].title}">
                 <h2>${lista[i].title}</h2>
                 <h3>${lista[i].description}</h3>
-                <p>${lista[i].price}</p>
-                <p>${lista[i].category}</p>
-                <p>${lista[i].stock}</p>
-                <p>${lista[i].tags}</p>
+                <p>${lista[i].price}$</p>
+                <p>stock:${lista[i].stock}</p>
+                <p>#${lista[i].tags}</p>
+                <p><a href="category.html?pjId=${lista[i].category}"> ${lista[i].category} </a>
+
             </article>
             `;
 
@@ -39,7 +40,7 @@ fetch('https://dummyjson.com/products?limit=194')
             for (let i = 0; i < usuREv.length; i++) {
                 opiniones.innerHTML += `
                 <div class= "reviewDeUsuario">
-                <p>⭐ Rating: ${usuREv[i].rating}</p>
+                <p>${usuREv[i].rating} ⭐ Rating</p>
                 <p>Comentario: ${usuREv[i].comment}</p>
                 <p>Fecha: ${usuREv[i].date}</p>
                 <p>Usuario: ${usuREv[i].reviewerName}</p>
