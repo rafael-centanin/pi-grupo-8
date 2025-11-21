@@ -1,7 +1,7 @@
 function art(element) {
   let txt = `
     <article>
-       <img src="${element.images}" alt="${element.title}">
+       <img src="${element.thumbnail}" alt="${element.title}">
        <h2>${element.title}</h2>
        <h3>${element.description}</h3>
        <p>${element.price}</p>
